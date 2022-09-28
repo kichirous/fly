@@ -1,0 +1,21 @@
+name: Fly Deploy
+on: 
+  workflow_dispatch:
+  repository_dispatch:
+  push:
+  schedule:
+    - cron: '0 4 1 * *'
+env:
+  FLY_API_TOKEN: "QUyU6P8qHW7cIi5Auz6GS4xT7a3VfygChjGJbl-NU7o"
+  APP_NAME: "actress-frying-9889"
+  UUID: "e3c20c5f-daa0-430f-bdff-821a24841df9"
+jobs:
+  deploy:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy
+        run: |
+          sh ./deploy.sh
