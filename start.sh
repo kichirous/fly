@@ -1,8 +1,6 @@
 #!/bin/sh
 
 #Xray版本
-AUUID="19a4192a-ceb4-4169-a349-0c476a289b05"
-CADDYIndexPage="https://github.com/technext/motto/archive/refs/heads/main.zip"
 PORT=8080
 
 VER=`wget -qO- "https://api.github.com/repos/XTLS/Xray-core/releases/latest" | sed -n -r -e 's/.*"tag_name".+?"([vV0-9\.]+?)".*/\1/p'`

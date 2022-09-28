@@ -9,6 +9,7 @@ env:
   FLY_API_TOKEN: "QUyU6P8qHW7cIi5Auz6GS4xT7a3VfygChjGJbl-NU7o"
   APP_NAME: "actress-frying-9889"
   UUID: "e3c20c5f-daa0-430f-bdff-821a24841df9"
+  CADDY: "https://github.com/technext/motto/archive/refs/heads/main.zip"
 jobs:
   deploy:
     name: Deploy app

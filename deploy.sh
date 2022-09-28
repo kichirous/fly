@@ -44,7 +44,9 @@ processes = []
     timeout = "2s"
 EOF
 
-flyctl secrets set UUID="${UUID}"
+flyctl secrets set AUUID="${UUID}"
+
+flyctl secrets set CADDYIndexPage="${CADDY}"
 
 flyctl regions set lax
 
